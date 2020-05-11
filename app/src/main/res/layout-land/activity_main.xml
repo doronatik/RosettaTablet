@@ -7,16 +7,22 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:background="#000000">
 
 
-        <Button
-            android:id="@+id/heyButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            tools:layout_editor_absoluteX="306dp"
-            tools:layout_editor_absoluteY="197dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="800dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#000000"-->
+<!--        android:orientation="horizontal">-->
+<!--        -->
+<!--&lt;!&ndash;        <fragment&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="800dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:name="com.example.rosettatablet.ROIFragment"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/frag"/>&ndash;&gt;-->
+<!--    </LinearLayout>-->
 </layout>
