@@ -4,25 +4,64 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:background="#000000">
 
+        <LinearLayout
+            android:id="@+id/layout_left_side"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.example.rosettatablet.ROIFragment"
+                    android:id="@+id/fragmentroi"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout_right_side"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp">
+
+            <LinearLayout
+                android:layout_weight="9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.example.rosettatablet.ProcedureInfoFragment"
+                    android:id="@+id/fragmentprocedureinfo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
 
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="800dp"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:background="#000000"-->
-<!--        android:orientation="horizontal">-->
-<!--        -->
-<!--&lt;!&ndash;        <fragment&ndash;&gt;-->
-<!--&lt;!&ndash;            android:layout_width="800dp"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:name="com.example.rosettatablet.ROIFragment"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:id="@+id/frag"/>&ndash;&gt;-->
-<!--    </LinearLayout>-->
+        </LinearLayout>
+
+    </LinearLayout>
 </layout>
